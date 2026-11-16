@@ -12,7 +12,7 @@ export class Equipamento {
     }
 
     if (!['ativo', 'inativo'].includes(this.status)) {
-      throw new Error("Oh oh status deve ser ativo ou inativo.");
+     throw new Error("O status deve ser ativo ou inativo.");
     }
   }
 }

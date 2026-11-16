@@ -12,7 +12,7 @@ export class Calibracao {
     }
 
     if (!this.dataCalibracao || !this.resultado || !this.responsavel) {
-      throw new Error("Data, resultado e responsável são obrigatórios.");
+      throw new Error("Data né ,resultado e responsável são obrigatórios.");
     }
 
     if (!['aprovado', 'reprovado'].includes(this.resultado)) {

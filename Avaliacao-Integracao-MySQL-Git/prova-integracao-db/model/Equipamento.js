@@ -8,11 +8,11 @@ export class Equipamento {
 
   validar() {
     if (!this.codigoPatrimonio || !this.nome || !this.setor) {
-      throw new Error("Código, nome e setor são obrigatórios.");
+      throw new Error("Código né, nome e setor são obrigatórios.");
     }
 
     if (!['ativo', 'inativo'].includes(this.status)) {
-      throw new Error("O status deve ser ativo ou inativo.");
+      throw new Error("Oh oh status deve ser ativo ou inativo.");
     }
   }
 }

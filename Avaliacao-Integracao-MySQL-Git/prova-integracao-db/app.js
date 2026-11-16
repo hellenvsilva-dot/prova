@@ -1,7 +1,7 @@
 import express from "express";
 import equipamentoRoutes from "./routes/equipamentoRoutes.js";
 import calibracaoRoutes from "./routes/calibracaoRoutes.js";
-import { conexao } from "./config/conexao.js";
+import { conexao } from "../config/conexao.js";
 
 const app = express();
 const port = Number(process.env.PORT);
@@ -17,7 +17,7 @@ app.get("/", (req, res) => {
 try {
   await conectarBanco();
   app.listen(port, () => {
-    console.log(`Servidor executando em http://localhost:${port}`);
+    console.log(`Servidores executando em http://localhost:${port}`);
   });
 } catch (erro) {
   console.error("Não foi possível iniciar a API:", erro.message);

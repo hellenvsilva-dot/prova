@@ -17,7 +17,7 @@ app.get("/", (req, res) => {
 try {
   await conectarBanco();
   app.listen(port, () => {
-    console.log(`Servidores executando em http://localhost:${port}`);
+    console.log(`Servidor executandos em http://localhost:${port}`);
   });
 } catch (erro) {
   console.error("Não foi possível iniciar a API:", erro.message);
